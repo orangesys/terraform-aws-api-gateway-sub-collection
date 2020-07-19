@@ -5,9 +5,9 @@
 #   description = "The ID of the REST API."
 # }
 
-output "parent_id" {
+output "resource_parent_id" {
   value       = join("", aws_api_gateway_resource.default.*.id)
-  description = "The parent ID of the REST API."
+  description = "The resource parent ID of the REST API."
 }
 
 # output "execution_arn" {
